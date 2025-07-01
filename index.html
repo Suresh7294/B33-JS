@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var StudentName=prompt("Enter Student Name");
+        var StudentId=prompt("Enter Student ID");
+
+        var Mark1=parseInt(prompt("Enter Mark1"));
+        var Mark2=parseInt(prompt("Enter Mark2"));
+        var Mark3=parseInt(prompt("Enter Mark3"));
+        var Mark4=parseInt(prompt("Enter Mark4"));
+        var Mark5=parseInt(prompt("Enter Mark5"));
+
+        var Total=(Mark1+Mark2+Mark3+Mark4+Mark5);
+        var per=(Total/500)*100;
+
+        var grade;
+        if (per >= 90) {
+            grade = "A+";
+          }         
+        else if (per >= 80) {
+            grade = "A";
+          } 
+          else if (per >= 70) {
+            grade = "B";
+          } 
+          else if (per >= 60) {
+            grade = "C";
+          } 
+          else if (per >= 50) {
+            grade = "D";
+          } 
+          else {
+            grade = "F (Fail)";
+          }
+
+        document.write("Student Name="+StudentName+"<br>");
+        document.write("Student Id="+StudentId+"<br><br>");
+        document.write("Student Marks:-"+"<br><br>"+"Mark 1="+Mark1+"<br>"+"Mark 2="+Mark2+"<br>"+"Mark 3="+Mark3+"<br>"+"Mark 4="+Mark4+"<br>"+"Mark 5="+Mark5+"<br><br>");
+        document.write("Total Mark="+Total+"/500<br>");       
+        document.write("Percentage ="+per.toFixed(2) + "%<br>");
+        document.write("Grade ="+grade);
+
+        
+    </script>
+</body>
+</html>
